@@ -240,3 +240,8 @@ API will be available at `http://127.0.0.1:8000/api/`
 ## 📄 License
 
 This project is for educational purposes.
+
+## Author
+```
+Built by Ken
+```
