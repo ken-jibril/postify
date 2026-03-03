@@ -27,7 +27,7 @@ class PostViewSet(viewsets.ModelViewSet):
 
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filterset_fields = ['category', 'author', 'published_date', 'tags']
-    search_fields = ['title', 'content', 'author__username', 'tags__name']
+    search_fields = ['title', 'content', 'author__username', 'tags__name', 'category__name']
     ordering_fields = ['published_date', 'created_date']
 
     def perform_create(self, serializer):

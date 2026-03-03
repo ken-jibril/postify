@@ -27,6 +27,8 @@ class TagSerializer(serializers.ModelSerializer):
 
 class PostSerializer(serializers.ModelSerializer):
     author = serializers.ReadOnlyField(source='author.username')
+    title = serializers.CharField(min_length=5, max_length=200)
+    content = serializers.CharField(min_length=20)
 
     class Meta:
         model = Post
